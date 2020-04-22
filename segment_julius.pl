@@ -392,6 +392,11 @@ sub yomi2voca {
     s/ふょ/ hy o/g;
     s/ふぇ/ f e/g;
     s/ふぉ/ f o/g;
+    s/ゔぁ/ b a/g; # yomi2voca.plではEUCのためサポートできない
+    s/ゔぃ/ b i/g;
+    s/ゔぇ/ b e/g;
+    s/ゔぉ/ b o/g;
+    s/ゔゅ/ by u/g;
 
 # 1音からなる変換規則
     s/あ/ a/g;
@@ -468,6 +473,7 @@ sub yomi2voca {
     s/ん/ N/g;
     s/っ/ q/g;
     s/ー/:/g;
+    s/ゔ/ b u/g; # yomi2voca.plではEUCのためサポートできない
 
 # ここまでに処理されてない ぁぃぅぇぉ はそのまま大文字扱い
     s/ぁ/ a/g;
